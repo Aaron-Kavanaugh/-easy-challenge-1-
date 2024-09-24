@@ -1,9 +1,37 @@
-# Ignore Visual Studio files
+# Ignore Visual Studio-related folders and files
 .vs/
-*.vsidx
-*.user
+*.vcxproj.user
 *.suo
+*.user
+*.cache
+*.ilk
+*.log
+*.ncb
+*.obj
+*.pch
+*.pdb
+*.ipch
+*.tlog
+*.lastbuildstate
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+
+# Ignore build folders
+Debug/
+Release/
+x64/
+
+# Ignore other build files
+*.o
+*.out
 *.exe
 *.dll
-*.obj
-*.log
+*.lib
+*.idb
+*.ipdb
+*.iobj
+
+# Ignore Visual Studio Code settings
+.vscode/
