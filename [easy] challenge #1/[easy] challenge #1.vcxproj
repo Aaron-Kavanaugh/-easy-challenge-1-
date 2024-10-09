@@ -128,6 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MenuSystem.cpp" />
+    <ClCompile Include="UserInput.cpp" />
+    <ClCompile Include="WriteToFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MenuSystem.h" />
+    <ClInclude Include="UserInput.h" />
+    <ClInclude Include="WriteToFile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

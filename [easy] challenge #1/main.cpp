@@ -1,14 +1,11 @@
-#include <iostream>
-#include <fstream>
+#include "MenuSystem.h"
 
 int main()
 {
 
-	std::ofstream myFiles("filename.txt");
+	MenuSystem menu;
 
-	myFiles << "Hi, mom!";
-
-	myFiles.close();
+	menu.menuLogic();
 
 	return 0;
 }
