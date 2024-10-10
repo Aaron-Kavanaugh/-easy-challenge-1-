@@ -6,7 +6,7 @@ public:
 
 	MenuSystem();
 	~MenuSystem();
-
+	
 	void display(int option) const;
 	void menuLogic() const;
 

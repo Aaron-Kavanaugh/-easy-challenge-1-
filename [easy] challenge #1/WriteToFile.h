@@ -6,6 +6,6 @@ class WriteFile
 public:
 	WriteFile();
 	~WriteFile();
-private:
 
+	void createFile();
 };
