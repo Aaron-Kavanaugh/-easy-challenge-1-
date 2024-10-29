@@ -1,6 +1,8 @@
 #include "WriteToFile.h"
 #include "UserInput.h"
 #include <fstream>
+#include <filesystem>
+#include <string>
 
 WriteFile::WriteFile() {}
 

@@ -127,14 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DeleteInfo.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MenuSystem.cpp" />
     <ClCompile Include="UserInput.cpp" />
+    <ClCompile Include="ViewInfo.cpp" />
     <ClCompile Include="WriteToFile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DeleteInfo.h" />
     <ClInclude Include="MenuSystem.h" />
     <ClInclude Include="UserInput.h" />
+    <ClInclude Include="ViewInfo.h" />
     <ClInclude Include="WriteToFile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

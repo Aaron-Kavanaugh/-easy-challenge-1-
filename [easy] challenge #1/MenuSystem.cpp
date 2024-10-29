@@ -1,5 +1,7 @@
 #include "MENUSYSTEM.h"
 #include "WriteToFile.h"
+#include "ViewInfo.h"
+#include "DeleteInfo.h"
 #include <iostream>
 #include <conio.h>
 
@@ -12,20 +14,20 @@ void MenuSystem::display(int option) const
 {
 	std::cout << "=== MENU ===\n";
 	std::cout << (option == 0 ? "> " : " ") << "Add info\n";
-	std::cout << (option == 1 ? "> " : " ") << "Edit info\n";
-	std::cout << (option == 2 ? "> " : " ") << "View info\n";
-	std::cout << (option == 3 ? "> " : " ") << "Delete info\n";
-	std::cout << (option == 4 ? "> " : " ") << "Exit\n";
+	std::cout << (option == 1 ? "> " : " ") << "View info\n";
+	std::cout << (option == 2 ? "> " : " ") << "Delete info\n";
+	std::cout << (option == 3 ? "> " : " ") << "Exit\n";
 }
 
 void MenuSystem::menuLogic() const 
-{
-
+{	
 	WriteFile file;
+	ViewInfo view;
+	DeleteInfo deletefile;
 
 	int currentOption = 0;
 	char input;
-	const int numOption{ 5 };
+	const int numOption{ 4 };
 	while (true) {
 		system("cls"); // clear screen (use "clear" on Linux/Unix systems)
 		display(currentOption);
@@ -50,19 +52,15 @@ void MenuSystem::menuLogic() const
 			}
 			else if (currentOption == 1) 
 			{
-				std::cout << "Edit info\n";
+				view.displayInfoToConsole();
 			}
 			else if (currentOption == 2) 
 			{
-				std::cout << "View info\n";
+				deletefile.deleteFile();
 			}
 			else if (currentOption == 3) 
 			{
-				std::cout << "Remove info\n";
-			}
-			else if (currentOption == 4) 
-			{
-				std::cout << "Exit\n";
+				std::cout << "Exit program\n";
 				break;
 			}
 			system("pause"); // Pause before showing the menu again
